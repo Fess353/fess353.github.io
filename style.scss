@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+}
+
+ol,
+ul {
+  padding-left: 0rem;
+}
+
+.ham_row {
+display: flex;
+align-self: flex-end;
+flex-direction: row;
+justify-content: flex-end;
+transform: translate(0px, -80px);
+}
+
+.ham {
+padding: 0;
+ width: 80px;
+opacity: 0.3;
+transform: scale(0.8);
+
+
+
+}
+
+.section_header {
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+}
+
+//блок имя-профессия-язык
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;   
+  }
+
+.name {
+    font-family: Gilroy-Bold;
+    font-size: 1.3rem;
+    font-weight: 550;
+    line-height: 40px;
+    color: #070707;
+    width: 10%;
+    padding-top: 37px;
+    margin-right: auto;
+    filter: drop-shadow(2px 2px 5px #5e454586) contrast(0.7);
+    transition: 1s;
+
+
+  }
+.name:hover {
+            transition-duration: 0.3s;
+            color: #066aeef5;
+        }
+  .prof {
+    font-family: Gilroy-Medium;
+    font-size: 1.1rem;
+    line-height: 22px;
+    color: #070707;
+    width: 17%;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+  
+  .lang_switcher {
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #770b0bb0;
+    transform: rotate(-90deg);
+    padding-top: 50px;
+    margin-left: auto;
+    width: auto;    
+
+        span {
+            color: #47232359;
+            }
+        }
+  
+
+  .active {
+      font-size: 160%;
+      border-bottom: 2px solid #0eede9;
+      padding-bottom: 4px;
+      color: #011414f5 !important;
+  }
+  
+//Верхнее меню навигации
+.navigation_menu {
+  position: relative;
+  width: 80%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-top: 33px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #828282;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  transition: 1s;
+
+        button {
+        padding: 8px;
+        font-family: Gilroy-Bold;
+        font-size: 1rem;
+        line-height: 22px;
+        color: #828282;
+        }
+        
+        button:hover {
+        filter: drop-shadow(2px 2px 5px #5e454586) contrast(0.7);
+        border-bottom: hsla(192, 69%, 65%, 0.747) 2px solid;
+        padding-bottom: 5px;
+
+        transition-duration: 0.3s;
+        }
+
+}
+
+.photo {
+  margin-top: 30px;
+ 
+
+  img {
+    border: slategrey solid 2px;
+    transition: 1s;
+  }
+
+  img:hover {
+    border: solid 1px #4e4545;
+    transition: ease-in-out 1s;
+    filter: contrast(1.1) brightness(1.1);
+    transform: scale(1.02);
+  }
+}
+
+.about_me {
+  background: #f6f6f6;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  padding-top: 70px;
+  padding-bottom: 107px;
+  height: auto;
+}
+
+.about_me p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about_me h2 {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.skills {
+  min-height: 20%;
+  max-height: auto;
+}
+.section_header {
+  padding-top: 2rem;
+}
+
+p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.soft_skills {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-around;
+}
+
+.img_container img {
+  background-image: linear-gradient(to bottom right, #0eede9, #023da3);
+  width: 80px;
+  padding: 5px;
+  border-radius: 5%;
+  
+}
+
+.img_container:hover {
+  filter: sepia(0.1) hue-rotate(10deg) brightness(1.1)
+    drop-shadow(2px 2px 4px #333);
+  transition: ease-in-out 0.3s;
+}
+
+.soft_names {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-around;
+  padding-top: 0.4em;
+  transition: 1s;
+
+}
+
+.soft_names div:hover {
+  filter: sepia(0.1) hue-rotate(10deg) brightness(1.1)
+    drop-shadow(2px 2px 4px #333);
+  transition: ease-in-out 0.5s;
+}
+
+.full {
+  color: black;
+  filter: invert(0.5) brightness(1.3)
+    drop-shadow(1px 1px 5px hsla(192, 69%, 65%, 0.747));
+}
+
+.full:hover {
+  transform: scale(1.1) rotate(10deg);
+  transition: ease-in-out 0.5s;
+}
+
+.soft_stars {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.4em;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  transition: 1s;
+
+}
+
+.skill_container {
+  padding-bottom: 30px;
+}
+
+.portfolio {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  place-content: start;
+}
+
+.portfolio_item {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border: #18e7e4f5 solid 2px;
+  border-bottom: none;
+  
+  img {
+    padding-bottom: 20px;
+  }
+
+  img:hover {
+    filter: contrast(1.1) brightness(1.1) sepia(0.1)
+      drop-shadow(2px 2px 4px #333);
+    transform: translate(4px, 2px);
+    transition: ease-in-out 0.5s;
+  }
+
+  span {
+    text-decoration: underline #e21818;
+  }
+}
+
+.hidden {
+  filter: opacity(0);
+  transition: 1s;
+  visibility: hidden;
+  }
+
+.display_none {
+  transition-delay: 1s;
+  filter: opacity(0);
+  transition-duration: 1s;
+  display: none !important;
+}
+
+.contacts_list {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 5px;
+border-bottom: 1px solid hsla(192, 69%, 65%, 0.747);
+
+}
+
+a {
+text-decoration: none;
+color: #2c5bac;
+}
+
+a:active {
+  color: hsla(192, 69%, 65%, 0.747);
+}
+
+.contact {
+  position: relative;
+  top: 20px ;
+  padding: 10px;
+  padding-bottom: 30px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #023da3;
+  
+  }
+
+.contact-icon {
+      width: 60px;
+      height: 60px;
+      background: url("/img/social-media-icons-css-sprite.png") no-repeat;
+      transition: 0.7s;
+    
+    }
+
+.contact-vk .contact-icon {
+background-position: -339px -60px;
+margin-left: auto;
+margin-right: auto; 
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 5px #5e454586);
+  }
+
+.contact-email .contact-icon {
+  background-position: -226px -60px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+
+.contact-phone .contact-icon {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/img/phone-icon-vector-blue.png);
+    background-size: contain;
+    text-align: center;
+    }
+
+.rights {
+  text-align: end;
+  padding: 15px;
+  color: hsla(192, 46%, 49%, 0.747);
+}
+
+  
+
+
+@media all and (max-width: 720px) {
+  .contacts_list {
+  
+    flex-direction: column;
+    align-items: center;
+  }
+
+      .navigation_menu {
+        position: relative;
+       }
+
+      .navigation_menu li button {
+          font-size: 1em;
+      }
+
+      .navigation_menu {
+          flex-wrap: wrap;
+          width: 80%;
+      }
+
+      .header {
+          flex-direction: column;
+          place-content: space-between center;
+      }
+
+        .name, 
+        .prof,
+        .lang_switcher {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+      }
+
+      .name {
+        margin-top: 60px;
+      }
+
+      .lang_switcher {
+          position: absolute;
+          left: 10px;
+          top: 250px;
+          margin-right: 10px;
+          width: auto;
+          padding-top: 0px;
+          transition: 1s;
+
+      }
+
+@media all and (min-width: 720px) {
+}
+}
+
+
+//бутерброд
+.menu-icon span {
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: #5de0e9de;
+  transition: 0.7s ease-in-out;
+}
+
+.menu-icon span::before,
+.menu-icon span::after {
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: #26d9e6;
+  content: "";
+    transition: 0.7s ease-in-out;
+}
+
+.menu-icon span::before {
+  transform: translate(0, -24px);
+}
+
+.menu-icon span::after {
+  transform: translate(0, 12px);
+}
+
+.open span {
+  transform: rotate(180deg);
+}
+
+.open span::before,
+.open span::after {
+  width: 60%;
+}
+
+.open span::before {
+  transform: translate(38px, -14px) rotate(45deg);
+}
+
+.open span::after {
+  transform: translate(38px, 2px) rotate(-45deg);
+}

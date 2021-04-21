@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-sm-12 offset-sm-0">
+          
+            <div class="top_menu">
+            <ul class="navigation_menu">
+
+              <li class="navigation"> 
+                  <button onclick="myFunction1()" class="btn point1">
+                    <div class="eng_text">Home</div>
+                    <div class="rus_text display_none"> Основное </div>
+                  </button> 
+                </li>
+
+              <li class="navigation">
+                    <button onclick="myFunction2()" class="btn point2">
+                      <div class="eng_text">About me</div>
+                      <div class="rus_text display_none"> Обо мне </div>
+                    </button> 
+              </li>
+              
+
+              <li class="navigation">
+                <button onclick="myFunction3()" class="btn point3">
+                  <div class="eng_text">Skills</div>
+                  <div class="rus_text display_none"> Навыки </div>
+                </button> 
+              </li>
+
+              <li class="navigation">
+                <button onclick="myFunction4()" class="btn point4">
+                  <div class="eng_text">Portfolio</div>
+                  <div class="rus_text display_none"> Портфолио </div>
+                </button> 
+              </li>
+
+              <li class="navigation">
+                <button onclick="myFunction5()" class="btn point5">
+                  <div class="eng_text">Contacts</div>
+                  <div class="rus_text display_none"> Контакты </div>
+                </button>
+              </li>
+
+            </ul>
+
+            <div class="ham_row">
+              <div class="menu-icon open ham btn">
+                <span></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="header" id="point1_aim">
+            <div class="name eng_text">Alexandr Polonchuk</div>
+            <div class="name rus_text display_none">Полончук Александр</div>
+            
+            <div class="prof eng_text">
+              WEB developer<br />
+              27 years old,<br> Crimea
+            </div>
+
+            <div class="prof rus_text display_none">
+              WEB разработчик<br />
+              27 лет,<br> Крым
+            </div>
+
+            <div class="btn lang_switcher"> 
+              <span class='ru'>RU </span> |
+              <span class='en active'> ENG</span> 
+            </div>
+
+          </div>
+
+          <div class="photo">
+            <img
+              src="/img/6L_AU_M5zj4.jpg"
+              alt="Photo"
+              width="100%"
+              height="auto"
+            />
+          </div>
+
+          <div class="about_me" id="point2_aim">
+            <h2 class="section_header eng_text">About me</h2>
+            <h2 class="section_header rus_text display_none">Обо мне</h2>
+
+            
+            <p class="eng_text">
+              Hi, I'm Alex – Junior Web Developer.<br>
+              I'm interested in Web and everything connected with it.<br><br>
+              Yes! I'm just studying, but...<br><br>
+              ready to implement excellent projects with wonderful people.
+            </p>
+
+            <p class="rus_text display_none">
+              Приветствую. Меня зовут Александр.<br>
+              Я начинающий WEB-разработчик.<br> <br>
+              Заинтересован в создании интересных, красивых и практичных сайтов.<br><br>
+              Да! Я только осваиваю данную профессию, но...<br><br>
+              Готов учиться и работать с интересными людьми и проектами.
+            </p>
+
+          </div>
+
+          <div class="skills" id='point3_aim'>
+            <div class="section_header eng_text">Skills</div>
+            <div class="section_header rus_text display_none">Навыки</div>
+            <p class="eng_text"> My knowledge today</p>
+            <p class="rus_text display_none"> Мои знания сегодня </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-sm-12 offset-sm-0">
+          <div class="skill_main"></div>
+          <div class="row">
+            <div class="col-md-4 col-sm-12 ml-md-auto skill_container">
+              <div class="img_container">
+                <img
+                  src="/img/html5-10-569380.png"
+                  alt="HTML5"
+                  width="90px"
+                  height="auto"
+                  />
+              </div>
+              <div class="soft_names">HTML_5</div>
+              <div class="soft_star1">
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+                />
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+                />
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+                />
+                <img src="/img/Star.png" 
+                  width="22px" 
+                  height="20px" 
+                  alt="star" />
+                <img src="/img/Star.png" 
+                width="22px" 
+                height="20px"
+                alt="star"/>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 ml-md-auto skill_container">
+              <div class="img_container">
+                <img
+                  src="/img/css-logo.png"
+                  alt="CSS"
+                  width="90px"
+                  height="auto"
+
+                />
+              </div>
+              <div class="soft_names">CSS_3</div>
+              <div class="soft_star2">
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+                />
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+                />
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+                />
+                <img src="/img/Star.png" 
+                width="22px" 
+                height="20px" 
+                alt="star"/>
+                <img src="/img/Star.png" 
+                width="22px" 
+                height="20px" 
+                alt="star"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 ml-md-auto skill_container">
+              <div class="img_container">
+                <img
+                  src="/img/JavaScript-logo.png"
+                  alt="JS"
+                  width="90px"
+                  height="80px"
+                  
+                />
+              </div>
+              <div class="soft_names">JavaScript</div>
+              <div class="soft_star3">
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+
+                />
+                <img
+                  src="/img/Star.png"
+                  width="22px"
+                  height="20px"
+                  class="full"
+                  alt="star"
+                />
+                
+                <img src="/img/Star.png" 
+                width="22px" 
+                height="20px" 
+                alt="star"/>
+
+                <img src="/img/Star.png" 
+                width="22px" 
+                height="20px" 
+                alt="star"/>
+
+                <img src="/img/Star.png" 
+                width="22px" 
+                height="20px"
+                alt="star" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-sm-12 offset-sm-0 portfolio">
+          <div id='point4_aim'>
+            <div class="portfolio_header section_header eng_text">Portfolio</div>
+            <div class="portfolio_header section_header rus_text display_none"> Портфолио</div>
+          </div>
+          
+          <div class="portfolio_item">
+            <img src="/img/braun.png" alt="Braun" width="95%" height="auto" />
+            <span>Braun Landing Page - Concept</span>
+          </div>
+          <div class="portfolio_item">
+            <img src="/img/woman.png" alt="Fashion" width="95%" height="auto" />
+            <span>Online fashion store - Homepage</span>
+          </div>
+          <div class="portfolio_item">
+            <img
+              src="/img/reebok_web.png"
+              alt="Reebok"
+              width="95%"
+              height="auto"
+            />
+            <span>Reebok Store - Concept </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-sm-12 offset-sm-0 contacts">
+          <div id='point5_aim'>
+            <div class="contacts_header section_header eng_text">Сontacts</div>
+            <div class="contacts_header section_header rus_text display_none"> Контакты </div>
+          </div>
+          
+          <div class="contacts_list">
+            
+            <div class="contact contact-email">
+            <div class="contact-icon"></div>
+            <a href="mailto:Vataroq@gmail.com">Vataroq@gmail.com</a>
+            
+            </div>
+
+            <div class="contact contact-phone">
+              <div class="contact-icon"></div>
+              +7 (978) 894 31 40
+            </div>
+
+            <div class="contact contact-vk">
+            <div class="contact-icon"></div>
+              <a href = 'https://vk.com/fs353' target="_blank"> vk.com</a>
+            </div>
+
+          </div>
+          <div class="rights">
+            Polonchuk Alexandr <br>
+            2021
+          </div>
+    </div>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+      sitePath = "/";
+      sflakesMax = 34;
+      sflakesMaxActive = 34;
+      svMaxX = 2;
+      svMaxY = 2;
+      ssnowStick = 0;
+      sfollowMouse = 1;
+      </script>
+      <script type="text/javascript" src="/snow/snow.js"></script>
+      
+  </body>
+</html>
